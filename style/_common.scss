@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $color_black;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'Geometria-Bold';
+    src: url('../font/Geometria-Bold.eot');
+    src: url('../font/Geometria-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../font/Geometria-Bold.ttf') format('truetype'),
+         url('../font/Geometria-Bold.woff') format('woff'),
+         url('../font/Geometria-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin backGround($url, $size) {
+    background-image: $url;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: $size;
+}
+
+.wrap {
+    @include backGround(url('../images/background.jpg'), cover);
+    height: 100vh;
+}
+
+header {
+    @include flex();
+    justify-content: space-between;
+    background-color: $color_white;
+    height: 50px;
+    padding: 20px 40px;
+
+    & > h1 {
+        @include flex();
+
+        & > a {
+            font-family: 'Geometria-Bold';
+        }
+
+    }
+
+}
+
+main {
+    @include flex();
+    height: calc(100% - 50px);
+}
+
+section {
+    position: relative;
+    height: 100%;
+    border: $border_color_black;
+
+    &:first-of-type {
+        @include flex();
+        flex-direction: column;
+        width: 20%;
+        padding: 70px 60px;
+    }
+
+    &:nth-of-type(2) {
+        width: 60%;
+    }
+
+    &:last-of-type {
+        width: 20%;
+        @include flex();
+        flex-direction: column;
+        width: 20%;
+        padding: 70px 60px;
+    }
+}
+
+h2 {
+    font-family: 'NanumSquareRound';
+}
+
+.carculator_wrap {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 100px;
+    padding: 0 30px;
+    background-color: $color_white;
+    border-radius: $border_radius_medium;
+}
+
+#map {
+    width: 100%;
+    height: 50%;
+    background-color: $color_white;
+    border-radius: $border_radius_medium;
+}
+
+.clock_wrap {
+    @include backGround(url('../images/clock.png'), contain);
+    width: 80%;
+    height: 40%;
+    margin: 4.5% auto;
+    border: $border_color_black;
+}
+
+.todolist_wrap {
+    @include flex();
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+    height: 40%;
+    margin: 7% auto 0;
+    border: $border_color_black;
+}
+
+.calendar_wrap {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 100px;
+    padding: 0 30px;
+    background-color: $color_white;
+    border-radius: $border_radius_medium;
+}
+
+.weather {
+    width: 100%;
+    height: 50%;
+    background-color: $color_white;
+    border-radius: $border_radius_medium;
+}
