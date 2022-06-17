@@ -13,6 +13,7 @@
         <header>
             <h1><a href="#">CHYORI</a></h1>
             <div class="util">
+                <p id="loginUser">로그인 사용자: <span>홍길동</span><small id="logoutBtn">로그아웃</small></p>
                 <a href="https://velog.io/@chyori" target="_blank" >
                     <span class="blind">벨로그</span>
                 </a>
@@ -79,7 +80,18 @@
             </section>
         </main>
     </div>
+
+    <aside id="loginPage">
+        <h2>SIGN IN</h2>
+        <form id="signinForm">
+            <input type="text" id="idInput" autocomplete="off" required>
+            <input type="password" id="pwInput" required>
+            <p id="loginState"></p>
+            <button id="signinBtn">SEND</button>
+        </form>
+    </aside>
 </body>
+<script src="./js/login.js"></script>
 <script src="./js/carculator.js"></script>
 <script src="./js/map.js"></script>
 <script src="./js/clock.js"></script>

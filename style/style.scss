@@ -6,9 +6,16 @@
 
 .util {
     @include flex();
-    justify-content: space-between;
+    justify-content: flex-end;
     height: 100%;
-
+    & > #loginUser {
+        margin-right: 20px;
+        small {
+            margin-left: 10px;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
     & > a {
         display: block;
         width: 30px;
@@ -328,3 +335,82 @@ h3 {
     }
 }
 
+
+
+@mixin flex-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+// 로그인 페이지 스타일
+.wrap {
+    display: none;
+}
+#loginPage {
+    @include flex-column;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffea97;
+    z-index: 99;
+
+    h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    form {
+        @include flex-column;
+        width: 200px;
+    }
+    input {
+        width: 100%;
+        border: 1px solid #ddd;
+        height: 36px;
+        padding: 0 10px;
+        outline: 0;
+        transition: .1s;
+        &:focus {
+            border: 2px solid #d4b539;
+        }
+        &:first-of-type {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            border-bottom: 0;
+            &:focus {
+                border: 2px solid #d4b539;
+                & ~ input {
+                    border-top: 0;
+                }
+            }
+        }
+        &:last-of-type {
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+    }
+    button {
+        width: 100%;
+        border-radius: 8px;
+        margin-top: 20px;
+        height: 36px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        background-color: #c49f0e;
+        color: #fff;
+        &:hover {
+            background-color: #ad8d0e;
+        }
+        &:active {
+            background-color: #997d0e;
+        }
+    }
+    p {
+        font-size: 12px;
+        color: #f00;
+        padding: 5px 0 0;
+    }
+}
