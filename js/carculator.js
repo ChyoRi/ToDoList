@@ -12,7 +12,7 @@ const btnArr = [
   { id: 11, value: '3', type: 'number' },
   { id: 12, value: '+', type: 'sign' },
   { id: 13, value: '0', type: 'number' },
-  { id: 14, value: '<', type: 'dot' },
+  { id: 14, value: 'C', type: 'dot' },
   { id: 15, value: '÷', type: 'sign' },
   { id: 16, value: '=', type: 'result' },
 ];

@@ -82,48 +82,66 @@ section {
     &:first-of-type {
         @include flex();
         flex-direction: column;
-        width: 20%;
-        min-width: 482px;
+        align-items: space-between;
+        width: 25%;
+        // min-width: 480px;
         padding: 70px 60px;
     }
 
     &:nth-of-type(2) {
-        width: 60%;
+        width: 50%;
     }
 
     &:last-of-type {
-        width: 20%;
+        width: 25%;
         @include flex();
         flex-direction: column;
-        width: 20%;
         padding: 70px 60px;
     }
 }
 
 h2 {
     font-family: 'NanumSquareRound';
+    font-size: 20px;
 }
 
 .carculator_wrap {
+    position: relative;
     width: 100%;
+    min-width: 250px;
     height: 50%;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     padding: 0 30px;
     background-color: $color_white;
     border-radius: $border_radius_medium;
+
+    & > h2 {
+        position: absolute;
+        top: -14%;
+        left: 0;
+    }
 }
 
-#map {
+.map_wrap {
+    position: relative;
     width: 100%;
+    min-width: 250px;
     height: 50%;
     background-color: $color_white;
     border-radius: $border_radius_medium;
+
+    & > h2 {
+        position: absolute;
+        top: -14%;
+        left: 0;
+    }
 }
 
 .clock_wrap {
     @include backGround(url('../images/clock.png'), contain);
+    position: relative;
     width: 80%;
-    height: 40%;
+    height: 50%;
     margin: 4.5% auto;
     border: $border_color_black;
 }
@@ -139,17 +157,35 @@ h2 {
 }
 
 .calendar_wrap {
+    position: relative;
     width: 100%;
+    min-width: 250px;
     height: 50%;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     padding: 0 30px;
     background-color: $color_white;
     border-radius: $border_radius_medium;
+
+    & > h2 {
+        position: absolute;
+        top: -14%;
+        left: 0;
+    }
+
 }
 
-.weather {
+.weather_wrap {
+    position: relative;
     width: 100%;
+    min-width: 250px;
     height: 50%;
     background-color: $color_white;
     border-radius: $border_radius_medium;
+
+    & > h2 {
+        position: absolute;
+        top: -14%;
+        left: 0;
+    }
+
 }

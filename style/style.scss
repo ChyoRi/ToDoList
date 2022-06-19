@@ -8,6 +8,7 @@
     @include flex();
     justify-content: flex-end;
     height: 100%;
+
     & > #loginUser {
         margin-right: 20px;
         small {
@@ -16,6 +17,7 @@
             text-decoration: underline;
         }
     }
+
     & > a {
         display: block;
         width: 30px;
@@ -37,15 +39,9 @@
 
 }
 
-.carculator_text {
-    position: absolute;
-    top: 1.8%;
-    left: 13.5%;
-}
-
 .carculator_input {
-    margin-top: 30px;
-    height: 50px;
+    margin-top: 20px;
+    min-height: 20px;
 
     & > input {
         width: 100%;
@@ -66,22 +62,26 @@
 .button_list {
     @include flex();
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     height: 75%;
     margin-top: 3%;
+
+    & > li {
+        width: 25%;
+    }
 
     & > li:nth-of-type(4n) > button {
         margin-right: 0;
     }
 
     & > li > button {
-        min-width: 60px;
-        min-height: 60px;
+        min-width: 28px;
+        min-height: 28px;
         margin-right: 20px;
         border-radius: 50%;
         background-color: $color_gray;
         color: $color_black;
-        font-size: 20px;
+        font-size: 14px;
 
         &.active {
             background-color: $color_active;
@@ -89,12 +89,6 @@
         }
     }  
 
-}
-
-.map_text {
-    position: absolute;
-    top: 49%;
-    left: 13.5%;
 }
 
 .clock_text {
@@ -202,18 +196,6 @@
     }
 }
 
-.calendar_text {
-    position: absolute;
-    top: 1.8%;
-    left: 13.5%;
-}
-
-.weather_text {
-    position: absolute;
-    top: 49%;
-    left: 13.5%;
-}
-
 h3 {
     @include flex();
     justify-content:space-between;
@@ -270,15 +252,19 @@ h3 {
 }
 
 .calendar_wrap {
+
     h3 {
         flex-wrap: wrap;
+
         & > span {
             display: flex;
             align-items: center;
             justify-content: space-between;
             width: 100%;
+
             &.top {
                 padding-bottom: 6px;
+
                 button {
                     display: flex;
                     align-items: center;
@@ -288,7 +274,9 @@ h3 {
                     border-radius: 100px;
                     background-color: #ccc;
                 }
+
             }
+
             &.bottom button {
                 display: flex;
                 align-items: center;
@@ -302,6 +290,7 @@ h3 {
         }
     }
 }
+
 .calendar_frame {
     border: $border_color_black;
     display: flex;

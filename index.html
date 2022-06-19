@@ -23,37 +23,44 @@
                 <a href="http://chyori.com/" target="_blank" >
                     <span class="blind">포트폴리오</span>
                 </a>
+            </div>
         </header>
         <main>
             <section class="left_wrap">
-                <h2 class="carculator_text">계산기</h2>
                 <div class="carculator_wrap">
+                    <h2 class="carculator_text">계산기</h2>
                     <div class="carculator_input">
                         <input type="text" class="resultInput" placeholder="계산할 숫자를 입력해주세요."/>
                     </div>
                     <ul class="button_list"></ul>
                 </div>
-                <h2 class="map_text">지도</h2>
-                <div id="map"></div>
+                <div class="map_wrap">
+                    <h2 class="map_text">지도</h2>
+                    <div id="map"></div>
+                </div>
             </section>
             <section class="center_wrap">
-                <h2 class="clock_text">시계</h2>
-                <div class="clock_wrap">
-                    <h3 class="month_day"></h3>
-                    <h3 class="clock_hm"></h3>
-                </div>
-                <h2 class="todolist_text">해야 할 일</h2>
-                <div class="todolist_wrap">
-                    <div class="input_wrap">
-                        <input type="text" class="todo_text" placeholder="해야 할 일을 입력해주세요." />
-                        <button type="button" class="add"></button>
+               <div class="clock_wrap">
+                    <h2 class="clock_text">시계</h2>
+                    <div class="clock_content">
+                        <h3 class="month_day"></h3>
+                        <h3 class="clock_hm"></h3>
                     </div>
-                    <ul class="todolist"></ul>
-                </div>
+               </div>
+               <div class="todolist_wrap">
+                    <h2 class="todolist_text">해야 할 일</h2>
+                    <div class="todolist_content">
+                        <div class="input_wrap">
+                            <input type="text" class="todo_text" placeholder="해야 할 일을 입력해주세요." />
+                            <button type="button" class="add"></button>
+                        </div>
+                        <ul class="todolist"></ul>
+                    </div>
+               </div>
             </section>
             <section class="right_wrap">
-                <h2 class="calendar_text">달력</h2>
                 <div class="calendar_wrap">
+                    <h2 class="calendar_text">달력</h2>
                     <h3>
                         <span class="top">
                             <span></span>
@@ -75,8 +82,10 @@
                         <!-- 날짜 (js 출력) -->
                     </ul>
                 </div>
-                <h2 class="weather_text">날씨</h2>
-                <div class="weather"></div>
+                <div class="weather_wrap">
+                    <h2 class="weather_text">날씨</h2>
+                    <div class="weather"></div>
+                </div>
             </section>
         </main>
     </div>
