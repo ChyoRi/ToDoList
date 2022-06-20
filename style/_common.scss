@@ -75,22 +75,19 @@ main {
 }
 
 section {
+    @include flex();
+    flex-direction: column;
     position: relative;
     height: 100%;
     border: $border_color_black;
+    padding: 70px 60px;
 
     &:first-of-type, &:last-of-type {
-        @include flex();
-        flex-direction: column;
         width: 25%;
-        padding: 70px 60px;
     }
 
     &:nth-of-type(2) {
-        @include flex();
-        flex-direction: column;
         width: 50%;
-        padding: 70px 60px;
     }
 
 }
@@ -106,13 +103,13 @@ h2 {
     min-width: 250px;
     height: 50%;
     margin-bottom: 60px;
-    padding: 0 30px;
+    padding: 0 10px;
     background-color: $color_white;
     border-radius: $border_radius_medium;
 
     & > h2 {
         position: absolute;
-        top: -10%;
+        top: -12%;
         left: 0;
     }
 }
@@ -127,7 +124,7 @@ h2 {
 
     & > h2 {
         position: absolute;
-        top: -10%;
+        top: -12%;
         left: 0;
     }
 }
@@ -157,8 +154,17 @@ h2 {
 
     & > h2 {
         position: absolute;
-        top: -10%;
+        top: -12%;
         left: 0;
+    }
+
+    & > .todolist_content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80%;
+        margin: 0 auto;
     }
 
 }

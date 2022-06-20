@@ -98,8 +98,8 @@
     flex-direction: column;
     position: absolute;
     top: 22%;
-    left: 3%;
-    width: 43%;
+    left: 13%;
+    width: 34%;
     height: 68%;
     border: $border_color_black;
 
@@ -109,21 +109,15 @@
 
     & > .month_day{
         margin-top: 18%;
-        font-size: 36px;
+        font-size: 26px;
     }
 
     & > .clock_hm {
-        font-size: 100px;
+        font-size: 76px;
     }
 }
 
-.todolist_text {
-    position: absolute;
-    top: 49%;
-    left: 10%;
-}
-
-.input_wrap {
+.todolist_input {
     position: relative;
     width: 90%;
     height: 15%;
