@@ -97,6 +97,8 @@ h2 {
     font-size: 20px;
 }
 
+// 계산기 wrap
+
 .carculator_wrap {
     position: relative;
     width: 100%;
@@ -114,6 +116,8 @@ h2 {
     }
 }
 
+// 지도 wrap
+
 .map_wrap {
     position: relative;
     width: 100%;
@@ -129,11 +133,14 @@ h2 {
     }
 }
 
+// 시계 wrap
+
 .clock_wrap {
     @include backGround(url('../images/clock.png'), contain);
     position: relative;
     width: 100%;
-    height: 50%;
+    height: 45%;
+    margin-bottom: 50px;
     border: $border_color_black;
 
     & > h2 {
@@ -143,14 +150,14 @@ h2 {
     }
 }
 
+// ToDoList wrap
+
 .todolist_wrap {
     @include flex();
     flex-direction: column;
-    justify-content: space-around;
     position: relative;
     width: 100%;
     height: 50%;
-    border: $border_color_black;
 
     & > h2 {
         position: absolute;
@@ -159,15 +166,14 @@ h2 {
     }
 
     & > .todolist_content {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
+        width: 90%;
         height: 80%;
         margin: 0 auto;
     }
 
 }
+
+// 달력 wrap
 
 .calendar_wrap {
     position: relative;
@@ -186,6 +192,8 @@ h2 {
     }
 
 }
+
+// 날씨 wrap
 
 .weather_wrap {
     position: relative;
