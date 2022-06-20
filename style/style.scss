@@ -42,9 +42,10 @@
 .carculator_input {
     margin-top: 20px;
     min-height: 20px;
+    text-align: center;
 
     & > input {
-        width: 100%;
+        width: 90%;
         height: 100%;
         padding: $padding_small;
         border: 2px solid #000;
@@ -68,6 +69,7 @@
 
     & > li {
         width: 25%;
+        text-align: center;
     }
 
     & > li:nth-of-type(4n) > button {
@@ -75,13 +77,13 @@
     }
 
     & > li > button {
-        min-width: 28px;
-        min-height: 28px;
-        margin-right: 20px;
+        min-width: 35px;
+        min-height: 35px;
+        // margin-right: 20px;
         border-radius: 50%;
         background-color: $color_gray;
         color: $color_black;
-        font-size: 14px;
+        font-size: 16px;
 
         &.active {
             background-color: $color_active;
@@ -91,26 +93,28 @@
 
 }
 
-.clock_text {
+.clock_content {
+    @include flex();
+    flex-direction: column;
     position: absolute;
-    top: 1.8%;
-    left: 10%;
-}
+    top: 22%;
+    left: 3%;
+    width: 43%;
+    height: 68%;
+    border: $border_color_black;
 
-.month_day {
-    position: absolute;
-    top: 21%;
-    left: 27.5%;
-    font-size: 36px;
-    color: $color_white;
-}
+    & > h3 {
+        color: $color_white;
+    }
 
-.clock_hm {
-    position: absolute;
-    top: 25%;
-    left: 28%;
-    font-size: 100px;
-    color: $color_white;
+    & > .month_day{
+        margin-top: 18%;
+        font-size: 36px;
+    }
+
+    & > .clock_hm {
+        font-size: 100px;
+    }
 }
 
 .todolist_text {
