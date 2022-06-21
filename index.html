@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
     <link rel="stylesheet" href="style/style.css">
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=72b6c39ce4d7ceb7c7d6f9ef2bef6444"></script>
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=72b6c39ce4d7ceb7c7d6f9ef2bef6444"></script>
 </head>
 <body>
     <div class="wrap">
@@ -36,7 +36,7 @@
                 </div>
                 <div class="map_wrap">
                     <h2 class="map_text">지도</h2>
-                    <div id="map"></div>
+                    <div id="map" style="height:100%; border-radius:40px; overflow:hidden;"></div>
                 </div>
             </section>
             <section class="center_wrap">
@@ -96,7 +96,6 @@
             <button id="signinBtn">SEND</button>
         </form>
     </aside>
-</body>
 <script src="./js/login.js"></script>
 <script src="./js/carculator.js"></script>
 <script src="./js/map.js"></script>
@@ -104,4 +103,5 @@
 <script src="./js/todolist.js"></script>
 <script src="./js/calendar.js"></script>
 <script src="./js/weather.js"></script>
+</body>
 </html>
