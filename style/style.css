@@ -160,6 +160,9 @@ h2 {
   top: -10%;
   left: 0;
 }
+.calendar_wrap > #map {
+  height: 100%;
+}
 
 .weather_wrap {
   position: relative;
