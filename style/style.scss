@@ -201,7 +201,7 @@
 .calendar_top {
     @include flex();
     justify-content: space-between;
-    margin-top: 15px;
+    margin-top: 20px;
 
     button {
         height: 30px;
@@ -241,8 +241,7 @@
 .calendar_day {
     @include flex();
     justify-content: space-between;
-    margin-top: 15px;
-    border: $border_color_black;
+    margin-top: 10px;
     border-bottom: none;
 
     & > li {
@@ -250,6 +249,7 @@
         width: calc(100% / 7);
         padding: 10px 0;
         text-align: center;
+        font-size: 14px;
     }
 
     & > li:first-of-type {
@@ -265,18 +265,18 @@
 
 .calendar_frame {
     @include flex();
-    border: $border_color_black;
     justify-content: space-between;
     flex-wrap: wrap;
 
+
     & > li {
-        @include flex();
         position: relative;
         width: calc(100% / 7);
         min-width: 40px;
         min-height: 40px;
-        justify-content: space-between;
-        padding: 6px;
+        padding: 6px 0;
+        text-align: center;
+        font-size: 14px;
 
         &.today {
             font-weight: 700;

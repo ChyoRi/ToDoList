@@ -82,10 +82,10 @@ h2 {
 .carculator_wrap {
   position: relative;
   width: 100%;
-  min-width: 250px;
+  min-width: 270px;
   height: 50%;
   margin-bottom: 60px;
-  padding: 0 10px;
+  padding: 0 15px;
   background-color: #fff;
   border-radius: 40px;
 }
@@ -98,14 +98,14 @@ h2 {
 .map_wrap {
   position: relative;
   width: 100%;
-  min-width: 250px;
+  min-width: 270px;
   height: 50%;
   background-color: #fff;
   border-radius: 40px;
 }
 .map_wrap > h2 {
   position: absolute;
-  top: -12%;
+  top: -14%;
   left: 0;
 }
 
@@ -122,7 +122,7 @@ h2 {
 }
 .clock_wrap > h2 {
   position: absolute;
-  top: -10%;
+  top: -13%;
   left: 0;
 }
 
@@ -136,7 +136,7 @@ h2 {
 }
 .todolist_wrap > h2 {
   position: absolute;
-  top: -12%;
+  top: -8%;
   left: 0;
 }
 .todolist_wrap > .todolist_content {
@@ -148,10 +148,10 @@ h2 {
 .calendar_wrap {
   position: relative;
   width: 100%;
-  min-width: 250px;
+  min-width: 270px;
   height: 50%;
+  padding: 0 10px;
   margin-bottom: 60px;
-  padding: 0 30px;
   background-color: #fff;
   border-radius: 40px;
 }
@@ -160,14 +160,11 @@ h2 {
   top: -10%;
   left: 0;
 }
-.calendar_wrap > #map {
-  height: 100%;
-}
 
 .weather_wrap {
   position: relative;
   width: 100%;
-  min-width: 250px;
+  min-width: 270px;
   height: 50%;
   background-color: #fff;
   border-radius: 40px;
@@ -360,7 +357,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .calendar_top button {
   height: 30px;
@@ -392,8 +389,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 15px;
-  border: 1px solid #000;
+  margin-top: 10px;
   border-bottom: none;
 }
 .calendar_day > li {
@@ -401,6 +397,7 @@ h2 {
   width: 14.2857142857%;
   padding: 10px 0;
   text-align: center;
+  font-size: 14px;
 }
 .calendar_day > li:first-of-type {
   color: red;
@@ -412,19 +409,17 @@ h2 {
 .calendar_frame {
   display: flex;
   align-items: center;
-  border: 1px solid #000;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .calendar_frame > li {
-  display: flex;
-  align-items: center;
   position: relative;
   width: 14.2857142857%;
   min-width: 40px;
   min-height: 40px;
-  justify-content: space-between;
-  padding: 6px;
+  padding: 6px 0;
+  text-align: center;
+  font-size: 14px;
 }
 .calendar_frame > li.today {
   font-weight: 700;
