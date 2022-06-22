@@ -101,6 +101,7 @@
 
 .clock_content {
     @include flex();
+    justify-content: center;
     flex-direction: column;
     position: absolute;
     top: 22%;
@@ -114,12 +115,11 @@
     }
 
     & > .month_day{
-        margin-top: 18%;
-        font-size: 26px;
+        font-size: 22px;
     }
 
     & > .clock_hm {
-        font-size: 76px;
+        font-size: 72px;
     }
 }
 
