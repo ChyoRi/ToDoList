@@ -47,7 +47,6 @@ button {
 }
 
 .wrap {
-    @include backGround(url('../images/background.jpg'), cover);
     height: 100vh;
 }
 
@@ -58,14 +57,30 @@ header {
     height: 50px;
     padding: 20px 40px;
 
-    & > h1 {
+    & > .home {
         @include flex();
+        height: 50px;
+
+        & > button {
+            padding: 2px 5px;
+            margin-left: 30px;
+            border: $border_color_black;
+            border-radius: $border_radius_small;
+            font-size: 18px;
+
+            &:hover {
+                background-color: $color_darkgray;
+                color: $color_black;
+            }
+        }
 
         & > a {
             font-family: 'Geometria-Bold';
         }
 
     }
+
+
 
 }
 

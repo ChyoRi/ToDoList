@@ -25,7 +25,7 @@ let clickedData = {
 };
 
 // Element
-const wrap = document.querySelector('ul.button_list');
+const ulWrap = document.querySelector('ul.button_list');
 const input = document.querySelector('.resultInput');
 
 // 계산 결과 출력
@@ -77,7 +77,7 @@ const calculate = () => {
 
 // 계산기 DOM 그리기
 const printDOM = (isReset) => {
-  wrap.innerHTML = '';
+  ulWrap.innerHTML = '';
   btnArr?.forEach(item => {
     let li = document.createElement('li');
     if (!isReset) {
@@ -97,7 +97,7 @@ const printDOM = (isReset) => {
       item?.type === 'result' ? calculate : 
       reset
     );
-    wrap.appendChild(li);
+    ulWrap.appendChild(li);
   });
 }
 
