@@ -178,7 +178,7 @@ h2 {
 }
 .weather_wrap > h2 {
   position: absolute;
-  top: -10%;
+  top: -14%;
   left: 0;
 }
 
@@ -396,7 +396,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 15px;
   border-bottom: none;
 }
 .calendar_day > li {
@@ -442,6 +442,53 @@ h2 {
   border-radius: 50%;
   background-color: rgba(255, 234, 151, 0.5019607843);
   transform: translate(-50%, -50%);
+}
+
+.weather {
+  height: 100%;
+}
+.weather > .weather_today {
+  width: 50%;
+  min-width: 150px;
+  margin: 20px 0 0 25px;
+}
+.weather > .weather_today > p {
+  display: flex;
+  align-items: center;
+  height: 30%;
+  margin-bottom: 5px;
+}
+.weather > .weather_today > p > span {
+  font-size: 18px;
+}
+.weather > .weather_today > p > span:first-of-type, .weather > .weather_today > p span:nth-of-type(2) {
+  margin-right: 5px;
+}
+.weather > .weather_today > h4 {
+  display: flex;
+  align-items: center;
+  height: 20%;
+  font-size: 20px;
+}
+.weather > .weather_image {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+  margin: 30px auto 0;
+  border: 1px solid #000;
+}
+.weather > .weather_image > .weather_back {
+  width: 80%;
+  height: 70%;
+  border: 1px solid #000;
+}
+.weather > .weather_image > .weather_temp {
+  width: 50%;
+  height: 30%;
+  border: 1px solid #000;
 }
 
 .wrap {
