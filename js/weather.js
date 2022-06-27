@@ -63,7 +63,7 @@ function onGeoOk(position) {
 
         switch(weather) {
             case 'Rain':
-                weaBack.style.backgroundImage =  `url('../images/${weaBackImageArray[1]}')`;
+                weaBack.style.backgroundImage =  `url('./images/${weaBackImageArray[1]}')`;
                 weaWrap.style.backgroundColor = `${weaBackColorArray[2]}`;
                 weaDay.style.color = '#ffffff';
                 weaDate.style.color = '#ffffff';
