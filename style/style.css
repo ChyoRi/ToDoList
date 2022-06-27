@@ -99,7 +99,7 @@ h2 {
 }
 .carculator_wrap > h2 {
   position: absolute;
-  top: -12%;
+  top: -45px;
   left: 0;
 }
 
@@ -113,7 +113,7 @@ h2 {
 }
 .map_wrap > h2 {
   position: absolute;
-  top: -14%;
+  top: -45px;
   left: 0;
 }
 
@@ -164,7 +164,7 @@ h2 {
 }
 .calendar_wrap > h2 {
   position: absolute;
-  top: -10%;
+  top: -45px;
   left: 0;
 }
 
@@ -178,7 +178,7 @@ h2 {
 }
 .weather_wrap > h2 {
   position: absolute;
-  top: -14%;
+  top: -45px;
   left: 0;
 }
 
@@ -459,7 +459,7 @@ h2 {
   margin-bottom: 5px;
 }
 .weather > .weather_today > p > span {
-  font-size: 18px;
+  font-size: 20px;
 }
 .weather > .weather_today > p > span:first-of-type, .weather > .weather_today > p span:nth-of-type(2) {
   margin-right: 5px;
@@ -468,27 +468,31 @@ h2 {
   display: flex;
   align-items: center;
   height: 20%;
-  font-size: 20px;
+  font-size: 24px;
 }
 .weather > .weather_image {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
-  height: 50%;
-  margin: 30px auto 0;
-  border: 1px solid #000;
+  width: 60%;
+  height: 60%;
+  margin: 35px auto 0;
 }
 .weather > .weather_image > .weather_back {
   width: 80%;
   height: 70%;
-  border: 1px solid #000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 .weather > .weather_image > .weather_temp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 50%;
   height: 30%;
-  border: 1px solid #000;
+  font-size: 34px;
 }
 
 .wrap {

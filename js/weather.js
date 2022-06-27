@@ -3,16 +3,17 @@ const weaDay = document.querySelector('.weather_day');
 const weaDate = document.querySelector('.weather_date');
 const weaMonth = document.querySelector('.weather_month');
 const local = document.querySelector('h4');
+const weaWrap = document.querySelector('.weather_wrap');
 const weaBack = document.querySelector('.weather_back');
 const weaTemp = document.querySelector('.weather_temp');
-const weaBackArray = [
-    'sunney.png',
-    'rainy.png',
-    'cloudy.png',
-    'thunder.png',
-    'mostly_clear.png',
-    'mostly_sunny.png'
+const weaBackImageArray = [
+    'sunney.png', 'rainy.png', 'cloudy.png',
+    'thunder.png', 'mostly_clear.png', 'mostly_sunny.png'
 ];
+
+const weaBackColorArray = [
+    '#D6E8EF', '#9894AA', '#DEDCE7', '#362947', '#F3E8D6', '#20233A'
+]
 
 
 // 달력 가져와서 뿌리기
@@ -55,9 +56,25 @@ function onGeoOk(position) {
     .then(data =>{
         const name = data.name;
         const weather = data.weather[0].main;
+        const temp = Math.round(data.main.temp);
         console.log(name);
         console.log(weather);
+        console.log(temp);
+
+        switch(weather) {
+            case 'Rain':
+                weaBack.style.backgroundImage =  `url('../images/${weaBackImageArray[1]}')`;
+                weaWrap.style.backgroundColor = `${weaBackColorArray[2]}`;
+                weaDay.style.color = '#ffffff';
+                weaDate.style.color = '#ffffff';
+                weaMonth.style.color = '#ffffff';
+                weaTemp.style.color = '#ffffff';
+                local.style.color = '#ffffff';
+                break;
+        }
+
         local.innerText = name;
+        weaTemp.innerText = temp + '˚';
     });
 
 }

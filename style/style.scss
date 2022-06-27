@@ -316,7 +316,7 @@
             margin-bottom: 5px;
 
             & > span {
-                font-size: 18px;
+                font-size: 20px;
             }
 
             & > span:first-of-type, span:nth-of-type(2) {
@@ -328,7 +328,7 @@
         & > h4 {
             @include flex();
             height: 20%;
-            font-size: 20px;
+            font-size: 24px;
         }
     }
 
@@ -336,21 +336,24 @@
         @include flex();
         flex-direction: column;
         justify-content: center;
-        width: 50%;
-        height: 50%;
-        margin: 30px auto 0;
-        border: $border_color_black;
+        width: 60%;
+        height: 60%;
+        margin: 35px auto 0;
 
         & > .weather_back {
             width: 80%;
             height: 70%;
-            border: $border_color_black;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
         }
 
         & > .weather_temp {
+            @include flex();
+            justify-content: center;
             width: 50%;
             height: 30%;
-            border: $border_color_black;
+            font-size: 34px;
         }
     }
 }
